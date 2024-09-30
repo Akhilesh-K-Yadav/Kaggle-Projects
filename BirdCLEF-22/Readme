@@ -1,6 +1,32 @@
+# BirdCLEF-2022: Bird Call Classification
 
-https://www.kaggle.com/competitions/birdclef-2022/
+This project focuses on classifying bird calls using a fine-tuned ResNet-50 machine learning model. By converting audio files into **Mel-spectrograms**, we transform the bird call data into a visual format suitable for training a convolutional neural network.
 
+### Challenge Overview
+
+The **BirdCLEF-2022** competition is a part of the larger LifeCLEF challenge, which encourages innovative approaches to species classification based on audio data. In this project, we use the challenge dataset to create a bird call classifier.
+
+### Approach
+
+- **Model**: The ResNet-50 architecture, pre-trained on ImageNet, is fine-tuned to work with bird call data.
+- **Data Processing**: Audio files are transformed into **Mel-spectrograms**, a type of visual representation of sound, which is then used to train the model.
+- **Training**: After converting the audio to Mel-spectrograms, we use supervised learning to fine-tune the ResNet-50 model on this dataset.
+
+### Dataset
+
+The dataset for the challenge is provided by BirdCLEF. You can learn more about the challenge and access the dataset using the following link:
+
+[BirdCLEF-2022 Challenge](https://www.kaggle.com/competitions/birdclef-2022)
+
+### Results
+
+The model was fine-tuned over 50 epochs, and we achieved promising results in classifying the bird calls. The performance can be further improved with additional fine-tuning and data augmentation techniques.
+
+### Contributing
+
+Feel free to open issues and submit pull requests if you'd like to contribute to improving the model or add new features.
+
+#PS:
 Results of epochs 5, 6 and 7:
 Model saved!
 Epoch=1, train_loss= 3.4609618606390775, val_loss=4.126508827562685
